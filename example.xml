@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CIT_REQUEST><SYSTEM><CIT_Version Value="1.0"/><BP_ID Value="SOME_PROCESS"/><ERR Value=""/><INTERFACE_RET Value=""/><FORMAT Value="XML"/><MAIN_ID Value=""/><MSG_ID Value="00000000-a111-b222-c333-444444444"/><SYNC Value="N"/><SYS_ID Value="NORMA"/><TAR_ID Value="IBSO_DISTR"/><Version Value="002"/></SYSTEM><DATA><CreditId>2027317288</CreditId><OnlineLogin>56163890</OnlineLogin><OnlineEnvelope>6757</OnlineEnvelope><DealId>123456</DealId><ConfirmEmployee><Name>Ответственнов Эмплой Сотрудникович</Name><Title>специальный специалист специализированной службы по специализации</Title></ConfirmEmployee><BBRequest><rnb_credit_request>
+   <uuid>11111111-a222-b333-c444-5555555555</uuid>
+   <credit_order>
+      <ordertime>2019-09-01T17:15:26</ordertime>
+      <consentdate>2019-09-20</consentdate>
+      <client_quest>
+         <lastname>Ифанофф</lastname>
+         <firstname>Ифан</firstname>
+         <middlename>Ифанович</middlename>
+         <birthday>1990-01-01</birthday>
+         <birthplace>планета Марс</birthplace>
+         <doc>
+            <seriesnumber>0102030405</seriesnumber>
+            <issuedate>2010-01-01</issuedate>
+            <organcode>123-321</organcode>
+            <organname>ОТДЕЛОМ УФМС РОССИИ ПО КРАЙНЕМУ КРАЮ В КАКОМ-ТО РАЙОНЕ</organname>
+         </doc>
+         <regaddress>111,РОССИЯ,000000,11,КРАЙНЫЙ КРАЙ,КАКОЙ-ТО Р-Н,,ХУТОР Х,УЛИЧНАЯ УЛ,42,,,</regaddress>
+         <liveaddress>111,РОССИЯ,000000,11,КРАЙНЫЙ КРАЙ,КАКОЙ-ТО Р-Н,,ХУТОР Х,УЛИЧНАЯ УЛ,42,,,</liveaddress>
+         <stayliveaddr>168</stayliveaddr>
+         <famstatus>1</famstatus>
+         <dependants>1</dependants>
+         <education>4</education>
+         <socstatus>1</socstatus>
+         <budget>
+            <incomes>
+               <clause uid="SALARY" sum="60000.00" confirmed="false"/>
+               <clause uid="SALARY-ELSE" sum="5000.00" confirmed="false"/>
+            </incomes>
+            <charges>
+               <clause uid="LOANS" sum="3500.00"/>
+            </charges>
+         </budget>
+       </client_quest>
+      <consort_quest>
+         <lastname>Ифаноффа</lastname>
+         <firstname>Ифана</firstname>
+         <middlename>Ифаноффна</middlename>
+         <birthday>1980-01-01</birthday>
+         <doc/>
+         <stayliveaddr>0</stayliveaddr>
+         <famstatus>1</famstatus>
+         <education>0</education>
+         <socstatus>1</socstatus>
+         <budget>
+            <incomes>
+               <clause uid="SALARY" sum="0.00" confirmed="false"/>
+               <clause uid="SALARY-ELSE" sum="0.00" confirmed="false"/>
+            </incomes>
+            <charges>
+               <clause uid="LOANS" sum="0.00"/>
+            </charges>
+         </budget>
+       </consort_quest>
+   </credit_order>
+   <credit_info>
+      <icode>XXX_000000</icode>
+      <date_begin>2019-09-01</date_begin>
+      <date_begining>2019-09-01</date_begining>
+      <date_give>2019-09-01</date_give>
+      <date_ending>2024-08-30</date_ending>
+      <kind_credit>SOMEKIND</kind_credit>
+      <num_dog>НОМЕР-КИРИЛИЦЕЙ-42</num_dog>
+      <valuta>RUB</valuta>
+      <summa>567800.23</summa>
+      <period_months>60</period_months>
+      <repayment_day>30</repayment_day>
+      <cred_prc_sch>
+         <prc debt="ПЕНЯ_КРЕДИТ" prc_rate="1.30" rate_date="2019-09-22"/>
+         <prc debt="ПЕНЯ_ПРОЦЕНТЫ" prc_rate="1.30" rate_date="2019-09-22"/>
+         <prc debt="ПРЦ_КРЕД_112" prc_rate="19.00" rate_date="2019-09-22"/>
+         <prc debt="НЕУЧТЕН_ПРОЦЕНТЫ" prc_rate="19.00" rate_date="2019-09-22"/>
+      </cred_prc_sch>
+   </credit_info>
+</rnb_credit_request></BBRequest></DATA></CIT_REQUEST>
