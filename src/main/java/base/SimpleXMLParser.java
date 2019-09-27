@@ -1,6 +1,8 @@
 /**
- * простой обработчик xml - example.xml в корне проекта - есть одинаковые вложенные ноды - с ними
- * не работает - ищет только первый попавшийся
+ * простой обработчик xml - example.xml в корне проекта.
+ * Для нод с одинаковым названием нужно указать порядок следования в xml
+ * Данная реализация для быстрого парсинга xml-ек любого уровня вложенности,
+ * но удобнее всего работать, если ноды имеют уникальные названия
  */
 
 package base;
@@ -17,7 +19,7 @@ import java.io.File;
 
 public class SimpleXMLParser {
 
-    public String getNodeValue(String nodeName) {
+    public String getNodeValue(String nodeName, int numNode) {
         try {
             File fXmlFile = new File(".\\example.xml");
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
@@ -32,7 +34,7 @@ public class SimpleXMLParser {
                 if (nNode.getNodeType() == Node.ELEMENT_NODE) {
                     Element eElement = (Element) nNode;
                     return eElement.getElementsByTagName(nodeName)
-                            .item(0).getTextContent();
+                            .item(numNode).getTextContent();
                 }
             }
         } catch (Exception e) {
@@ -40,4 +42,5 @@ public class SimpleXMLParser {
         }
         return nodeName + " not found";
     }
+
 }
