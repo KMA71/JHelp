@@ -1,7 +1,16 @@
 package mock;
 
+import mock.components.ClientPassport;
+
 public abstract class Client {
 
+    public static Builder newClient() {
+        return new ClientBuilder();
+    }
+
+    protected abstract String name();
+    protected abstract ClientPassport passport();
+    protected abstract byte age();
 
     public interface Builder {
         public Builder name(String name);

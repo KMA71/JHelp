@@ -7,7 +7,13 @@ public class ClientBuilder implements Client.Builder {
     private ClientPassport passport;
     private byte age;
 
-/**Getters*/
+    public ClientBuilder() {
+        this.name = "defaultName";
+        this.passport = new ClientPassport();
+        this.age = 30;
+    }
+
+    /**Getters*/
     public String getName() {
         return name;
     }
