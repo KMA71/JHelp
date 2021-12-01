@@ -8,12 +8,17 @@ public class ClientTest {
     @Test
     void clientTest() {
 
+        System.out.println("***************");
         Client client = Client.newClient()
-                .age(35)
                 .name("Uasya")
                 .build();
         System.out.println(client);
-        System.out.println();
+        System.out.println("***************");
+        Client client1 = Client.newClient(35)
+                .name("ThirtyFiver")
+                .build();
+        System.out.println(client1);
+        System.out.println("***************");
     }
 
 }

@@ -8,6 +8,10 @@ public abstract class Client {
         return new ClientBuilder();
     }
 
+    public static Builder newClient(int age) {
+        return new ClientBuilder(age);
+    }
+
     protected abstract String name();
     protected abstract ClientPassport passport();
     protected abstract int age();

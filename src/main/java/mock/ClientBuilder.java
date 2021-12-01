@@ -13,6 +13,12 @@ public class ClientBuilder implements Client.Builder {
         this.age = 30;
     }
 
+    public ClientBuilder(int age) {
+        this.name = "defName2";
+        this.age = age;
+        this.passport = new ClientPassport(age);
+    }
+
 /**Getters*/
     public String getName() {
         return name;
