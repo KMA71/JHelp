@@ -1,4 +1,4 @@
-package mock;
+package mock.components;
 
 public enum HistoryValue {
     Good,
