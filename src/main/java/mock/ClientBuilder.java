@@ -5,15 +5,15 @@ import mock.components.ClientPassport;
 public class ClientBuilder implements Client.Builder {
     private String name;
     private ClientPassport passport;
-    private byte age;
+    private int age;
 
     public ClientBuilder() {
         this.name = "defaultName";
-        this.passport = new ClientPassport();
+//        this.passport = new ClientPassport();
         this.age = 30;
     }
 
-    /**Getters*/
+/**Getters*/
     public String getName() {
         return name;
     }
@@ -22,7 +22,7 @@ public class ClientBuilder implements Client.Builder {
         return passport;
     }
 
-    public byte getAge() {
+    public int getAge() {
         return age;
     }
 /**Getters END*/
@@ -39,13 +39,13 @@ public class ClientBuilder implements Client.Builder {
     }
 
     @Override
-    public Client.Builder age(byte age) {
+    public Client.Builder age(int age) {
         this.age = age;
         return this;
     }
 
     @Override
     public Client build() {
-        return null;
+        return new ImmutableClient(this);
     }
 }

@@ -10,12 +10,12 @@ public abstract class Client {
 
     protected abstract String name();
     protected abstract ClientPassport passport();
-    protected abstract byte age();
+    protected abstract int age();
 
     public interface Builder {
         public Builder name(String name);
         public Builder passport();
-        public Builder age(byte age);
+        public Builder age(int age);
         public Client build();
     }
 

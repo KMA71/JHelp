@@ -5,12 +5,13 @@ import mock.components.ClientPassport;
 public class ImmutableClient extends Client {
     private final String name;
     private final ClientPassport passport;
-    private final byte age;
+    private final int age;
 
     public ImmutableClient(ClientBuilder builder){
         this.name = builder.getName();
-        this.passport = builder.getPassport();
+//        this.passport = builder.getPassport();
         this.age = builder.getAge();
+        this.passport = new ClientPassport(25);
     }
 
     @Override
@@ -24,7 +25,7 @@ public class ImmutableClient extends Client {
     }
 
     @Override
-    protected byte age() {
+    protected int age() {
         return age;
     }
 
