@@ -10,10 +10,10 @@ public class ClientTest {
 
     @Test
     void clientTest() {
-
-        Client client = Client.newBuilder().build();
-        System.out.println(client);
-        System.out.println();
+//
+//        Client client = Client.newBuilder().build();
+//        System.out.println(client);
+//        System.out.println();
     }
 
 }

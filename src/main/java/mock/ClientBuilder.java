@@ -1,49 +1,45 @@
 package mock;
 
+import mock.components.ClientPassport;
+
 public class ClientBuilder implements Client.Builder {
+    private String name;
     private ClientPassport passport;
-    private String driverLicenceSeries;
-    private String driverLicenceNumber;
     private byte age;
-//    credit history is enum
-//    private final HystoryValue historyValue;
 
-
-    public ClientBuilder() {
-        this.passport = new ClientPassport();
-        this.driverLicenceSeries = "2222";
-        this.driverLicenceNumber = "222222";
-        this.age = 30;
+/**Getters*/
+    public String getName() {
+        return name;
     }
 
+    public ClientPassport getPassport() {
+        return passport;
+    }
+
+    public byte getAge() {
+        return age;
+    }
+/**Getters END*/
 
     @Override
-    public Client.Builder setPassport(String passSeries, String passNumber) {
-        this.passport.setSeries(passSeries);
-        this.passport.setNumber(passNumber);
+    public Client.Builder name(String name) {
+        this.name = name;
         return this;
     }
 
     @Override
-    public Client.Builder setDriverLicenceSeries(String driverLicenceSeries) {
-        this.driverLicenceSeries = driverLicenceSeries;
+    public Client.Builder passport() {
         return this;
     }
 
     @Override
-    public Client.Builder setDriverLicenceNumber(String driverLicenceNumber) {
-        this.driverLicenceNumber = driverLicenceNumber;
-        return this;
-    }
-
-    @Override
-    public Client.Builder setAge(byte age) {
+    public Client.Builder age(byte age) {
         this.age = age;
         return this;
     }
 
     @Override
     public Client build() {
-        return new Client(this);
+        return null;
     }
 }
